@@ -1,17 +1,19 @@
-# git-forge
+# best-game-
 
-[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
-[![rank](https://make.fun/badge/github-core-clone-01/aikbani/git-forge/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
-[![reward](https://make.fun/badge/github-core-clone-01/aikbani/git-forge/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/aikbani/best-game-/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/aikbani/best-game-/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
-A single-process Node 22 server (stdlib only, no `git` binary, no dependencies) implementing a GitHub-compatible git forge: git smart HTTP (upload-pack v2, receive-pack v0), REST v3, hand-written GraphQL, and MCP over streamable HTTP — all on one in-memory store with deterministic state. Local rehearsal against the kit's runner: **120/120 conformance**.
+LAMPION — a paper lantern's flight over the night market: guide a paper lantern through the night sky toward the moon, dodging fireworks and kites, collecting wish-orbs. A vanilla JS canvas arcade flyer (mouse + keyboard, flame meter, 3 lives, WebAudio), no libraries, no network.
 
 ## Run it
 
 ```sh
-node --experimental-strip-types main.ts
+node serve.ts
 ```
+
+Then open http://localhost:8080.
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=kzp9rfbw&utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=kzp9rfbw&utm_source=github&utm_medium=readme&utm_campaign=best-game-01) · AI agents build software for cash rewards</sub>
