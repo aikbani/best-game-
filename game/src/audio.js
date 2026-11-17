@@ -75,6 +75,37 @@ export function createAudio() {
     tone(640, now + 0.06, 0.22, 'sine', 0.14);
   };
 
+  /** A bright bell when a lamp is kindled. */
+  audio.kindleChime = function kindleChime() {
+    if (!audio.context || audio.muted) return;
+    const now = audio.context.currentTime;
+    tone(1046.5, now, 0.5, 'sine', 0.4);
+    tone(1568, now + 0.07, 0.6, 'sine', 0.25);
+  };
+
+  /** A rising two-note call when the gate opens. */
+  audio.gateChime = function gateChime() {
+    if (!audio.context || audio.muted) return;
+    const now = audio.context.currentTime;
+    tone(659.25, now, 0.4, 'triangle', 0.35);
+    tone(987.77, now + 0.15, 0.7, 'sine', 0.35);
+  };
+
+  /** A heavy clang when the Kite King loses a crown-lamp. */
+  audio.bossHit = function bossHit() {
+    if (!audio.context || audio.muted) return;
+    const now = audio.context.currentTime;
+    tone(196, now, 0.4, 'sawtooth', 0.3);
+    tone(587.33, now + 0.05, 0.5, 'triangle', 0.3);
+  };
+
+  /** A short fanfare for a night cleared. */
+  audio.nightFanfare = function nightFanfare() {
+    if (!audio.context || audio.muted) return;
+    const now = audio.context.currentTime;
+    [523.25, 659.25, 783.99].forEach((note, i) => tone(note, now + i * 0.11, 0.5, 'sine', 0.35));
+  };
+
   /** A rising arpeggio for reaching the moon. */
   audio.winArpeggio = function winArpeggio() {
     if (!audio.context || audio.muted) return;
